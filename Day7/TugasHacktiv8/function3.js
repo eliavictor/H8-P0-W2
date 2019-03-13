@@ -1,17 +1,22 @@
 function balikKata(kata) {
-	var splitKata = kata.split(""); // var splitString = "hello".split("");
-    // ["h", "e", "l", "l", "o"]
+	// var splitKata = kata.split(""); // var splitString = "hello".split("");
+ //    // ["h", "e", "l", "l", "o"]
  
-    // Step 2. Use the reverse() method to reverse the new created array
-    var reverseArray = splitKata.reverse(); // var reverseArray = ["h", "e", "l", "l", "o"].reverse();
-    // ["o", "l", "l", "e", "h"]
+ //    // Step 2. Use the reverse() method to reverse the new created array
+ //    var reverseArray = splitKata.reverse(); // var reverseArray = ["h", "e", "l", "l", "o"].reverse();
+ //    // ["o", "l", "l", "e", "h"]
  
-    // Step 3. Use the join() method to join all elements of the array into a string
-    var joinArray = reverseArray.join(""); // var joinArray = ["o", "l", "l", "e", "h"].join("");
-    // "olleh"
+ //    // Step 3. Use the join() method to join all elements of the array into a string
+ //    var joinArray = reverseArray.join(""); // var joinArray = ["o", "l", "l", "e", "h"].join("");
+ //    // "olleh"
     
-    //Step 4. Return the reversed string
-    return joinArray; // "olleh"
+ //    //Step 4. Return the reversed string
+ //    return joinArray; // "olleh"
+ var tampung = ''
+    for (var i = kata.length-1; i >= 0; i--) {
+       tampung = tampung + kata[i];
+    }
+    return tampung;
 }	
 
 // TEST CASES

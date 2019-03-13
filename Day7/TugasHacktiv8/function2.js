@@ -3,9 +3,9 @@ function bandingkanAngka(angka1, angka2) {
 	  if (angka2 == angka1){
 	  	output = '-1';
 	  } else if (angka2 > angka1){
-	  	output = 'true';
+	  	output = true;
 	  } else {
-	  	output = 'false'
+	  	output = false;
 	  }
 	return output
 }

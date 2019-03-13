@@ -16,9 +16,9 @@ function xo(str) {
   }
 
   if (cntX == cntO){
-	result = 'true';
+	result = true;
   } else {
-  	result = 'false';
+  	result = false;
   }
 
   return result
