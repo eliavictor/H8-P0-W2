@@ -1,7 +1,8 @@
 function groupAnimals(animals) {
-  var output = [[],[],[],[]]
+  var output = [[],[],[],[]];
+
   for (var i = 0; i < animals.length; i++) {
-  	switch(animals[i][0]) {
+  	  	switch(animals[i][0]) {
 	  case 'a':
 	    output[0].push(animals[i]);
 	    break;
@@ -15,6 +16,10 @@ function groupAnimals(animals) {
 	    output[3].push(animals[i]);
 	    break;
 	}
+  }
+
+  if (output.length != 3){
+
   }
 
   // output[0].push(animals)
